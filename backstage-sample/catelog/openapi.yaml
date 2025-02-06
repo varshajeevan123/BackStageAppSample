@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   title: Astra 3.N - OpenAPI 3.0
-  description: >
-    This is the Astra API Swagger documentation. This server is based on the
+  description: >-
+    This is the Astra API Swagger documentation.This server is based on the
     OpenAPI 3.0 specification.
   termsOfService: http://swagger.io/terms/
   version: 1.0.0
@@ -18,16 +18,16 @@ servers:
         description: Your local Astra API server IP address
 tags:
   - name: Astra Data
-    description: Information about procedure/activity carried on the Astra device.
+    description: Information about procedure/activity carried on the astra device.
 paths:
   /cyclecount:
     get:
       tags:
         - Astra Data
       summary: Get cycle count data
-      description: >
+      description: >-
         Get the information for the daily cycle count and lifetime cycle count
-        on the Astra device.
+        on the astra device.
       responses:
         '200':
           description: Successful response
@@ -44,9 +44,9 @@ paths:
       tags:
         - Astra Data
       summary: Get disinfection cycle data
-      description: >
+      description: >-
         Get the information for the last disinfection cycle procedure performed
-        on the Astra device.
+        on astra device.
       responses:
         '200':
           description: Successful response
@@ -63,9 +63,9 @@ paths:
       tags:
         - Astra Data
       summary: Get wild cycle data
-      description: >
-        Get the information for the last wild cycle procedure performed on the
-        Astra device.
+      description: >-
+        Get the information for the last wild cycle procedure performed on astra
+        device.
       responses:
         '200':
           description: Successful response
@@ -82,9 +82,9 @@ paths:
       tags:
         - Astra Data
       summary: Get HLD replaced data
-      description: >
+      description: >-
         Get the information for the last HLD Replaced procedure performed on the
-        Astra device.
+        astra device.
       responses:
         '200':
           description: Successful response
@@ -101,9 +101,9 @@ paths:
       tags:
         - Astra Data
       summary: Get water filter replaced data
-      description: >
+      description: >-
         Get the information for the last water filter replaced procedure
-        performed on the Astra device.
+        performed on the astra device.
       responses:
         '200':
           description: Successful response
@@ -120,9 +120,9 @@ paths:
       tags:
         - Astra Data
       summary: Get air filter replaced data
-      description: >
+      description: >-
         Get the information for the last air filter replaced procedure performed
-        on the Astra device.
+        on the astra device.
       responses:
         '200':
           description: Successful response
@@ -139,9 +139,9 @@ paths:
       tags:
         - Astra Data
       summary: Get firmware replaced data
-      description: >
+      description: >-
         Get the information for the last firmware replaced procedure performed
-        on the Astra device.
+        on the astra device.
       responses:
         '200':
           description: Successful response
@@ -158,9 +158,9 @@ paths:
       tags:
         - Astra Data
       summary: Get test strip bottle enrolled data
-      description: >
+      description: >-
         Get the information for the last test strip bottle enrolled procedure
-        performed on the Astra device.
+        performed on the astra device.
       responses:
         '200':
           description: Successful response
@@ -172,27 +172,6 @@ paths:
           description: Unauthorized
         '404':
           description: Resource not found
-components:
-  schemas:
-    Device:
-      type: object
-      properties:
-        cycleCount:
-          type: integer
-          description: The number of cycles
-        lifetimeCycleCount:
-          type: integer
-          description: The lifetime count of cycles
-    Bundle:
-      type: object
-      properties:
-        procedure:
-          type: string
-          description: The type of procedure
-        date:
-          type: string
-          format: date-time
-          description: The date when the procedure was performed
   /annualcalibrationconductivityprobereplaced:
     get:
       tags:
@@ -231,9 +210,9 @@ components:
           description: Unauthorized
         '404':
           description: Resource not found
+          
 security:
-  - BasicAuth: []  # Apply the BasicAuth scheme here
-
+  - BasicAuth: []
 components:
   schemas:
     Bundle:
@@ -310,6 +289,6 @@ components:
           type: integer
           example: 0
   securitySchemes:
-    BasicAuth:  # Define the security scheme in components here
+    BasicAuth:
       type: http
       scheme: basic
