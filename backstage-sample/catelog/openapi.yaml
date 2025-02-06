@@ -233,7 +233,7 @@ components:
           description: Resource not found
           
 security:
-  - BasicAuthScheme1: []  # Changed to a unique name
+  - BasicAuthScheme1: []  # Unique reference, applied to security section
 
 components:
   schemas:
@@ -310,7 +310,9 @@ components:
         valueInteger:
           type: integer
           example: 0
+
+  # Security Scheme Definition
   securitySchemes:
-    BasicAuthScheme1:  # Changed to match the unique key
+    BasicAuthScheme1:  # Ensure this matches with the reference in security section
       type: http
       scheme: basic
