@@ -231,9 +231,8 @@ components:
           description: Unauthorized
         '404':
           description: Resource not found
-          
 security:
-  - BasicAuthScheme1: []  # Unique reference, applied to security section
+  - BasicAuth: []  # Apply the BasicAuth scheme here
 
 components:
   schemas:
@@ -310,9 +309,7 @@ components:
         valueInteger:
           type: integer
           example: 0
-
-  # Security Scheme Definition
   securitySchemes:
-    BasicAuthScheme1:  # Ensure this matches with the reference in security section
+    BasicAuth:  # Define the security scheme in components here
       type: http
       scheme: basic
