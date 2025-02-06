@@ -12,7 +12,7 @@ spec:
   lifecycle: production
   owner: team-astra
   definition:
-    location: 'http://{baseUrl}/swagger.json'
+    location: "http://{baseUrl}/swagger.json"
     spec: |
       openapi: 3.0.0
       info:
