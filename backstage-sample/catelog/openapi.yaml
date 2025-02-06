@@ -233,7 +233,7 @@ components:
           description: Resource not found
           
 security:
-  - BasicAuth: []
+  - BasicAuthScheme: []
 components:
   schemas:
     Bundle:
