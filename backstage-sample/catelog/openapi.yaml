@@ -8,7 +8,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: team-a
+  owner: team-a  # Replace with the actual owner team or contact email
   definition:
     openapi: 3.0.0
     info:
@@ -55,7 +55,7 @@ spec:
             - Astra Data
           summary: Get disinfection cycle data
           description: |
-            Get the information for the last disinfection cycle procedure performed on Astra device.
+            Get the information for the last disinfection cycle procedure performed on the Astra device.
           responses:
             '200':
               description: Successful response
@@ -73,7 +73,7 @@ spec:
             - Astra Data
           summary: Get wild cycle data
           description: |
-            Get the information for the last wild cycle procedure performed on Astra device.
+            Get the information for the last wild cycle procedure performed on the Astra device.
           responses:
             '200':
               description: Successful response
