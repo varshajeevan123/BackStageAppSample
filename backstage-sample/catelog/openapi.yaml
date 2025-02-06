@@ -233,7 +233,8 @@ components:
           description: Resource not found
           
 security:
-  - BasicAuthScheme: []
+  - BasicAuthScheme1: []  # Changed to a unique name
+
 components:
   schemas:
     Bundle:
@@ -310,6 +311,6 @@ components:
           type: integer
           example: 0
   securitySchemes:
-    BasicAuth:
+    BasicAuthScheme1:  # Changed to match the unique key
       type: http
       scheme: basic
