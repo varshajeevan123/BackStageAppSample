@@ -1,20 +1,30 @@
-openapi: 3.0.0
-info:
-  title: Astra 3.N - OpenAPI 3.0
-  description: |-
-    This is the Astra API Swagger documentation.This server is based on the OpenAPI 3.0 specification.
-  termsOfService: http://swagger.io/terms/
-  version: 1.0.0
-externalDocs:
-  description: Find out more about Swagger
-  url: http://swagger.io
-servers:
-  - url: http://{baseUrl}
-    description: Base URL for API requests
-    variables:
-      baseUrl:
-        default: '127.0.0.1:443'
-        description: 'Your local Astra API server IP address'
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: astra-api
+  description: Astra API Swagger documentation.
+spec:
+  type: openapi
+  lifecycle: production
+  owner: your-team-name
+  definition:
+    $text: |
+      openapi: 3.0.0
+      info:
+        title: Astra 3.N - OpenAPI 3.0
+        description: This is the Astra API Swagger documentation.This server is based on the OpenAPI 3.0 specification.
+        termsOfService: http://swagger.io/terms/
+        version: 1.0.0
+      externalDocs:
+        description: Find out more about Swagger
+        url: http://swagger.io
+      servers:
+        - url: http://{baseUrl}
+          description: Base URL for API requests
+          variables:
+            baseUrl:
+              default: '127.0.0.1:443'
+              description: 'Your local Astra API server IP address'
 tags:
   - name: Login
     description: User login to the Astra Server.
