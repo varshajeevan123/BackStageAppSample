@@ -1,12 +1,16 @@
 openapi: 3.0.0
-apiVersion: v1
-info:
-  title: Astra 3.N - OpenAPI 3.0
-  description: >-
-    This is the Astra API Swagger documentation.This server is based on the
-    OpenAPI 3.0 specification.
-  termsOfService: http://swagger.io/terms/
-  version: 1.0.0
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: astra-api
+  description: Astra API for device cycle and status tracking.
+  tags:
+    - astra
+    - device
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-name
 externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
