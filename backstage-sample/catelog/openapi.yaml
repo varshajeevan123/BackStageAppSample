@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: astra-api
-  description: Astra 3.N API
+  description: astra 3.N API
   tags:
-    - Astra
+    - astra
 spec:
   type: openapi
   lifecycle: production
@@ -28,13 +28,13 @@ spec:
             default: 127.0.0.1:443
             description: Your local Astra API server IP address
     tags:
-      - name: Astra Data
+      - name: astra Data
         description: Information about procedure/activity carried on the Astra device.
     paths:
       /cyclecount:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get cycle count data
           description: |
             Get the information for the daily cycle count and lifetime cycle count on the Astra device.
@@ -52,7 +52,7 @@ spec:
       /disinfectioncycle:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get disinfection cycle data
           description: |
             Get the information for the last disinfection cycle procedure performed on the Astra device.
@@ -70,7 +70,7 @@ spec:
       /wildcycle:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get wild cycle data
           description: |
             Get the information for the last wild cycle procedure performed on the Astra device.
@@ -88,7 +88,7 @@ spec:
       /hldreplacedCycle:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get HLD replaced data
           description: |
             Get the information for the last HLD Replaced procedure performed on the Astra device.
@@ -106,7 +106,7 @@ spec:
       /waterfilterreplaced:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get water filter replaced data
           description: |
             Get the information for the last water filter replaced procedure performed on the Astra device.
@@ -124,7 +124,7 @@ spec:
       /airfilterreplaced:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get air filter replaced data
           description: |
             Get the information for the last air filter replaced procedure performed on the Astra device.
@@ -142,7 +142,7 @@ spec:
       /firmwarereplaced:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get firmware replaced data
           description: |
             Get the information for the last firmware replaced procedure performed on the Astra device.
@@ -160,7 +160,7 @@ spec:
       /teststripbottleenrolled:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get test strip bottle enrolled data
           description: |
             Get the information for the last test strip bottle enrolled procedure performed on the Astra device.
@@ -178,7 +178,7 @@ spec:
       /annualcalibrationconductivityprobereplaced:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get annual calibration and conductivity probe replaced data
           description: |
             Get the information for the last annual calibration and conductivity probe replaced procedure performed on the Astra device.
@@ -196,7 +196,7 @@ spec:
       /astrastatus:
         get:
           tags:
-            - Astra Data
+            - astra Data
           summary: Get Astra device status data
           description: |
             Get the status information for the last Astra device cycle procedure performed on the Astra device.
