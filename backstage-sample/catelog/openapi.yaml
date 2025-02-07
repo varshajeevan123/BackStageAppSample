@@ -33,7 +33,7 @@ spec:
       /cyclecount:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get cycle count data
           description: Get the information for the daily cycle count and lifetime cycle count on the astra device.
           responses:
@@ -50,7 +50,7 @@ spec:
       /disinfectioncycle:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get disinfection cycle data
           description: Get the information for the last disinfection cycle procedure performed on astra device.
           responses:
@@ -67,7 +67,7 @@ spec:
       /wildcycle:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get wild cycle data
           description: Get the information for the last wild cycle procedure performed on astra device.
           responses:
@@ -84,7 +84,7 @@ spec:
       /hldreplacedCycle:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get HLD replaced data
           description: Get the information for the last HLD Replaced procedure performed on the astra device.
           responses:
@@ -101,7 +101,7 @@ spec:
       /waterfilterreplaced:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get water filter replaced data
           description: Get the information for the last water filter replaced procedure performed on the astra device.
           responses:
@@ -118,7 +118,7 @@ spec:
       /airfilterreplaced:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get air filter replaced data
           description: Get the information for the last air filter replaced procedure performed on the astra device.
           responses:
@@ -135,7 +135,7 @@ spec:
       /firmwarereplaced:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get firmware replaced data
           description: Get the information for the last firmware replaced procedure performed on the astra device.
           responses:
@@ -152,7 +152,7 @@ spec:
       /teststripbottleenrolled:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get test strip bottle enrolled data
           description: Get the information for the last test strip bottle enrolled procedure performed on the astra device.
           responses:
@@ -169,7 +169,7 @@ spec:
       /annualcalibrationconductivityprobereplaced:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get annual calibration and conductivity probe replaced data
           description: Get the information for the last annual calibration and conductivity probe replaced procedure performed on the astra device.
           responses:
@@ -186,7 +186,7 @@ spec:
       /astrastatus:
         get:
           tags:
-          - astra data
+          - Astra Data
           summary: Get astra device status data
           description: Get the status information for the last astra device cycle procedure performed on the astra device.
           responses:
