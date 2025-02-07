@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: astra-3.n---openapi-3.0
+  description: This is the Astra API Swagger documentation. This server is based on the OpenAPI 3.0 specification.
+  annotations:
+    backstage.io/techdocs-ref: url:https://raw.githubusercontent.com/varshajeevan123/BackStageAppSample/main/backstage-sample/catelog/openapi.yaml
+spec:
+  type: openapi
+  lifecycle: production
+  owner: your-team
+  definition: https://raw.githubusercontent.com/varshajeevan123/BackStageAppSample/main/backstage-sample/catelog/openapi.yaml
