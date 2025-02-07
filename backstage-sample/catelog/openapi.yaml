@@ -1,17 +1,3 @@
-#apiVersion: backstage.io/v1alpha1
-#kind: API
-#metadata:
-  #name: json-placeholder-api
-  #description: "A sample API that returns posts"
-  #tags:
-    #- sample
-    #- jsonplaceholder
-#spec:
-  #type: openapi
-  #lifecycle: production
-  #owner: team-placeholder
-  #definition:
-    #location: 'https://jsonplaceholder.typicode.com/posts'
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
