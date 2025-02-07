@@ -9,4 +9,4 @@ spec:
   type: openapi
   lifecycle: production
   owner: your-team
-  definition: https://raw.githubusercontent.com/varshajeevan123/BackStageAppSample/main/backstage-sample/catelog/openapi.yaml
+  definition: https://app.swaggerhub.com/apis/vjtest/astra-3_n_open_api_3_0/1.0.0/swagger.yaml
